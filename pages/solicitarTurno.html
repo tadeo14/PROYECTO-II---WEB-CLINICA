@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica - Médicos</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/loginMedico.css" />
+  </head>
+  <body>
+    <main>
+      <section class="tarjetas">
+        <div class="container">
+          <h1>SELECCIONE UN MEDICO POR ESPECIALIAD</h1>
+          <hr />
+          <h1 id="titulo">TRAUMATOLOGIA</h1>
+          <hr />
+
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Carrizo-Diego.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Carrizo, Diego</h5>
+                  <p class="card-text">Traumtologia columna</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Carrizo, Diego')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Cerasuolo-Pedro.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Cerasuolo, Pedro</h5>
+                  <p class="card-text">Traumtologia Rodilla</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Cerasulo, Pedro')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/avatar-hombre.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Garcia, Pablo</h5>
+                  <p class="card-text">Traumtologia Rodilla</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Garcia Hamilton, Pablo')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/avatar-hombre.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Guillen,Jose</h5>
+                  <p class="card-text">Traumatologia Mienbro Inf</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Guillen, Jose')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Guzman-Nicolas.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Guzman, Nicolas</h5>
+                  <p class="card-text">Traumtologia cadera</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Guzman, Nicolas')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container py-2">
+          <h1 id="titulo3">PEDIATRIA</h1>
+          <hr />
+          <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4 py-5">
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Landa-Fabian.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Landa, Fabian Jose</h5>
+                  <p class="card-text">Traumatologia Cadera</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Landa, Fabian Jose')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Ortega-Enrique.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Ortega, Enrique</h5>
+                  <p class="card-text">Clinico General</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Ortega, Enrique')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Oñativia-Ignacio.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Oñativia, Igncio</h5>
+                  <p class="card-text">Dermatologo</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Oñativia, Ignacio')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Pacios-Jorge.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Pacios, Jorge</h5>
+                  <p class="card-text">Traumatologia Miembro Sup</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Pacios, Jorge')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img
+                  src="/img/Urpi-Joaquin.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Dr Urpi, Joaquin Jose</h5>
+                  <p class="card-text">Cardiologo</p>
+                </div>
+                <div class="d-flex justify-content-around mb-5">
+                  <button
+                    class="btn btn-primary"
+                    onclick="solicitarTurno('Dr Urpi, Joaquin Jose')"
+                  >
+                    Ver turnos
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/js/solicitarTurno.js"></script>
+  </body>
+</html>
