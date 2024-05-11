@@ -20,23 +20,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg  colorNavbar">
+    <nav class="navbar navbar-expand-lg colorNavbar">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../img/logosinfondo.png" alt="logo clinica" width="150px" height="85px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="/img/logosinfondo.png"
+            alt="logo clinica"
+            width="150px"
+            height="85px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Inicio</a
+              >
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Login
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="../paginas/loginMedico.html">Medico</a></li>
+                <li>
+                  <a class="dropdown-item" href="../paginas/loginMedico.html"
+                    >Medico</a
+                  >
+                </li>
                 <li><a class="dropdown-item" href="#">Pacientes</a></li>
               </ul>
             </li>
@@ -46,9 +72,38 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Medicos</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Turno
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/pages/solicitarTurno.html"
+                    >Generar Turno</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/pages/turnoasignados.html"
+                    >Ver turnos Medicos</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">Ver turnos Pacientes</a>
+                </li>
+              </ul>
             </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -118,9 +173,13 @@
             <br />
             <section class="container my-1">
                 <div>
-                  <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit repellat possimus eos odio consequuntur. Odio deleniti ex quisquam odit ducimus officia placeat rem aut dignissimos dicta neque magni, incidunt adipisci!
-                  </p>
+                  <p class="lead"><strong>
+                    Somos un grupo de alumnos de <a href="https://web.rollingcodeschool.com/" target="_blank">RollingCode School</a>, 
+                    comprometidos en el desarrollo de una plataforma web que simplifique la gestión de turnos médicos. Nuestra misión es facilitar
+                    el proceso de registro, acceso y programación de citas para pacientes, al mismo tiempo que ofrecemos a los profesionales de la salud
+                    una herramienta eficiente para administrar y registrar sus agendas.</strong>
+                </p>
+                
                 </div>
               </section>
           <!--Equipo-->
@@ -142,7 +201,7 @@
         
                 <div class="col-lg-3 col-md-3 col-sm-6 mb-4">
                     <div class="d-flex flex-column align-items-center">
-                        <img src="/img/ImagenesHernan/hernan.png" class="rounded" width="170" height="170" alt="...">
+                        <img src="../img/perfiles/fotocomentario.png" class="rounded" width="170" height="170" alt="...">
                         <strong>NICOLAS PEÑALOZA</strong> Desarrollador Frontend
                         <div class="mt-2">
                             <a href="https://github.com/Nicogdp" target="_blank"><i class="fab fa-github fa-2x mx-2"></i></a>
