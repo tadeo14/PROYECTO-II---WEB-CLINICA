@@ -30,5 +30,5 @@ consultaForm.addEventListener("submit", function (event) {
   );
 
   // Redirigir a la página principal
-  window.location.href = "/PROYECTO-II---WEB-CLINICA/pages/solicitarTurno.html";
+  window.location.href = "/pages/solicitarTurno.html";
 });

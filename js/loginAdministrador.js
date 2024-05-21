@@ -10,8 +10,7 @@ document
     // Ejemplo de validación simple
     if (username === "usuario" && password === "usuario") {
       // Usuario y contraseña válidos, redirige a la página principal
-      window.location.href =
-        "/PROYECTO-II---WEB-CLINICA/pages/administrador.html";
+      window.location.href = "/pages/administrador.html";
     } else {
       // Usuario o contraseña incorrectos, muestra un mensaje de error
       alert("Usuario o contraseña incorrectos. Por favor, inténtalo de nuevo.");

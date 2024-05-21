@@ -1,4 +1,4 @@
 function solicitarTurno(medico) {
   localStorage.setItem("selectedMedico", medico);
-  window.location.href = "/PROYECTO-II---WEB-CLINICA/pages/turnos.html";
+  window.location.href = "/pages/turnos.html";
 }

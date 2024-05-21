@@ -41,5 +41,5 @@ function cargarTurnos() {
 function solicitarConsulta(turno) {
   localStorage.setItem("selectedTurno", turno);
 
-  window.location.href = "/PROYECTO-II---WEB-CLINICA/pages/formulario.html";
+  window.location.href = "/pages/formulario.html";
 }
