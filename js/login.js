@@ -23,13 +23,7 @@ function validarLogin(e) {
 
 	if (comprobandoEmail !== undefined) {
 		if (comprobandoEmail.password === password) {
-			Swal.fire({
-				position: 'center',
-				icon: 'success',
-				title: 'login correcto',
-				showConfirmButton: false,
-				timer: 1500,
-			});
+			window.location.href = "/pages/turnoasignados.html";
 		} else {
 			return mostrarError('El email o la contraseña son incorrectas')
 
