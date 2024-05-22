@@ -17,13 +17,34 @@ function validarLogin(e) {
 		return email === usuario.email;
 	});
 
+	if(email === "" || password === ""){
+		return mostrarError('Todos los campos son obligatorios')
+	}
+
 	if (comprobandoEmail !== undefined) {
 		if (comprobandoEmail.password === password) {
-			console.log('Login Correcto');
+			Swal.fire({
+				position: 'center',
+				icon: 'success',
+				title: 'login correcto',
+				showConfirmButton: false,
+				timer: 1500,
+			});
 		} else {
-			console.log('El correo o la contraseña es incorrecta');
+			return mostrarError('El email o la contraseña son incorrectas')
+
 		}
 	} else {
-		console.log('El correo o la contraseña es incorrecta');
+		return mostrarError('El email o la contraseña son incorrectas')
 	}
+
+	
+}
+
+function mostrarError(mensaje) {
+	Swal.fire({
+		icon: 'error',
+		title: 'Oops...',
+		text: mensaje,
+	});
 }

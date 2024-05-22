@@ -30,8 +30,12 @@ function validarUsuario(e) {
 	//validar que los campos no esten vacios, que el email sea valido, verificar que el correo no este  registrado, que la contraseña sea mayor a cierta cantidad de caracteres y que sean iguales la contraseña y confirmar contraseña
 	if (!resultadoValdacion) {
 		return mostrarError('El email no es valido');
-	} else if (nombre === '') {
-		return mostrarError('El nombre es obligatorio');
+	} else if (nombre === '' || email === '' || password === '' || confirmPassword === '') {
+		return mostrarError('Todos los campos son obligatroios');
+	}else if(password.length < 6){
+		return mostrarError('La contraseña debe ser mayor a 6 caracteres');
+	}else if(password !== confirmPassword){
+		return mostrarError('Las contraseñas deben ser iguales')
 	}
 
 	//validar si el correo no existe en la lista
